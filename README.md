@@ -1,11 +1,13 @@
-Context dependant categorical perception in songbirds [CODE FOR PAPER]
+Expectation-driven sensory adaptations support enhanced acuity during categorical perception (Nature Neuroscience 2024) [CODE FOR PAPER]
 ==============================
 
-UPDATED: Jan 23 2022
+UPDATED: Nov 21 2024
 
 Behavior and Ephys analyses for context-dependent categorical perceptual decision making experiment in songbirds.
 
+### Download the dataset
 
+[Zenodo link to behavior and ephys dataset](https://zenodo.org/records/7363595)
 
 
 ### Running this analysis
@@ -19,8 +21,7 @@ Project Organization
     ├── LICENSE
     ├── README.md                          <- The top-level README for developers using this project.
     ├── data                               <- all data
-    ├── notebooks-clean                    <- All analysis notebooks (a curated version of just the relevant notebooks for the paper)
-    ├── notebooks                          <- All analysis notebooks (disorganized)
+    ├── notebooks                          <- Notebooks for reproducing statistics and figures
     ├── __init__.py                        <- Makes src a Python module
     ├── requirements.txt                   <- The requirements file for reproducing the analysis environment
     ├── setup.py                           <- makes project pip installable (pip install -e .) so src can be imported
@@ -30,15 +31,13 @@ Project Organization
 --------
 
 ## Analysis pipeline
-The spikesorting pipeline relies on kilosort and spikeinterface. Data are recorded in ~12 hour blocks continuously for weeks to months and sorted offline. An overview of the pipeline is drawn below. Each box roughly corresponds to a notebook in `notebooks_clean`.
+The spikesorting pipeline relies on kilosort and spikeinterface. Data are recorded in ~12 hour blocks continuously for weeks to months and sorted offline. An overview of the pipeline is drawn below. Each box roughly corresponds to a notebook. This figure was made in an early revision of the paper, and hasn't been fully updated as new revisions are written. If you have questions reach out! 
 
 ![spikesorting pipeline](assets/spikesorting-pipeline-cdcp-jan-21.svg)
 
 
-
-
 ## Spikesorting output
-For each bird, we produce the datasets listed below. These 
+For each bird, we produce the datasets listed below. 
 
 ### Recording summary dataframe
 Information about each raw recording session
